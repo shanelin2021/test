@@ -41,8 +41,8 @@ def findSecretWord(words, master):
         # Get feedback from master
         matches = master.guess(guess)
         
-        # If we got all 6 matches, we found it!
-        if matches == 6:
+        # If we got all matches, we found it!
+        if matches == len(guess):
             return guess
         
         # Filter candidates based on match count
